@@ -15,4 +15,11 @@ export default {
   padding: 0;
   margin: 0;
 }
+.el-breadcrumb{
+  margin-bottom: 20px;
+}
+.el-pagination{
+  margin-top: 30px;
+  float: right;
+}
 </style>

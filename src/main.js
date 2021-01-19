@@ -3,10 +3,15 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import store from './store'
 
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';//引入样式文件
 Vue.use(ElementUI)
+
+// import axios from 'axios';
+import axios from './assets/js/http'
+Vue.prototype.axios = axios;
 
 Vue.config.productionTip = false
 
@@ -14,6 +19,7 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })
